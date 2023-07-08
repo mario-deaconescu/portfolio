@@ -1,0 +1,235 @@
+{
+  "software-engineer": {
+    "en": "Software Engineer",
+    "ro": "Dezvoltator Software"
+  },
+  "language": {
+    "en": "Language",
+    "ro": "Limbă"
+  },
+  "phone": {
+    "en": "Phone",
+    "ro": "Telefon"
+  },
+  "about-me": {
+    "en": "About me",
+    "ro": "Despre mine"
+  },
+  "experience": {
+    "en": "Experience",
+    "ro": "Experiență"
+  },
+  "projects": {
+    "en": "Projects",
+    "ro": "Proiecte"
+  },
+  "introduction1": {
+    "en": "I am a software engineer from Romania, currently open to new opportunities.",
+    "ro": "Sunt un dezvoltator software din România, în prezent deschis pentru noi oportunități."
+  },
+  "introduction2": {
+    "en": "I code with passion and I love to learn new things.",
+    "ro": "Programez cu pasiune și îmi place să învăț lucruri noi."
+  },
+  "what-i-do": {
+    "en": "What I do",
+    "ro": "Ce fac"
+  },
+  "awards": {
+    "en": "Awards",
+    "ro": "Premii"
+  },
+  "frontend": {
+    "en": "Front-End Development",
+    "ro": "Dezvoltare Front-End"
+  },
+  "frontend-description": {
+    "en": "Modern websites made by hand, with attention to detail.",
+    "ro": "Site-uri moderne scrise de mână, cu atenție la detalii."
+  },
+  "backend": {
+    "en": "Back-End Development",
+    "ro": "Dezvoltare Back-End"
+  },
+  "backend-description": {
+    "en": "Fast and secure server solutions, fitted to your needs.",
+    "ro": "Soluții de server rapide și sigure, adaptate nevoilor tale."
+  },
+  "systems": {
+    "en": "Systems Programming",
+    "ro": "Programare Sisteme"
+  },
+  "systems-description": {
+    "en": "Develop high quality and efficient software using low-level languages.",
+    "ro": "Dezvoltă software de calitate și eficient folosind limbaje low-level."
+  },
+  "devops": {
+    "en": "DevOps Engineering",
+    "ro": "Inginerie DevOps"
+  },
+  "devops-description": {
+    "en": "Manage and scale your project with ease, using the best technologies.",
+    "ro": "Administrează și scalează proiectul tău cu ușurință, folosind cele mai bune tehnologii."
+  },
+  "national-olympiad": {
+    "en": "National Olympiad",
+    "ro": "Olimpiada Națională"
+  },
+  "programming-olympiad": {
+    "en": "Programming Olympiad",
+    "ro": "Olimpiada de Informatică"
+  },
+  "olympiad-description": {
+    "en": "Multiple awards at the National Programming Olympiad during 2015-2021, including a <strong>silver medal</strong>.",
+    "ro": "Mai multe premii la Olimpiada Națională de Informatică în perioada 2015-2021, inclusiv o <strong>medalie de argint</strong>."
+  },
+  "ftc-description": {
+    "en": "Leader of robotics team that won national and international awards at the <strong>First Tech Challenge</strong> competition.",
+    "ro": "Liderul echipei de robotică care a câștigat premii naționale și internaționale la competiția <strong>First Tech Challenge</strong>."
+  },
+  "work": {
+    "en": "Work",
+    "ro": "Muncă"
+  },
+  "education": {
+    "en": "Education",
+    "ro": "Educație"
+  },
+  "software-engineer-intern": {
+    "en": "Software Engineer Intern",
+    "ro": "Intern Dezvoltator Software"
+  },
+  "software-developer": {
+    "en": "Software Developer",
+    "ro": "Dezvoltator Software"
+  },
+  "diginesis-from": {
+    "en": "August 2022",
+    "ro": "August 2022"
+  },
+  "diginesis-to": {
+    "en": "October 2022",
+    "ro": "Octombrie 2022"
+  },
+  "diginesis-description-1": {
+    "en": "Developed new ERP software using Python.",
+    "ro": "Am dezvoltat un nou software ERP folosind Python."
+  },
+  "diginesis-description-2": {
+    "en": "Worked alongside senior software engineers and product managers.",
+    "ro": "Am lucrat alături de dezvoltatori software seniori și manageri de produs."
+  },
+  "netlup-from": {
+    "en": "June 2022",
+    "ro": "Iunie 2022"
+  },
+  "netlup-to": {
+    "en": "September 2022",
+    "ro": "Septembrie 2022"
+  },
+  "netlup-description-1": {
+    "en": "Created a command-line tool for data compression with specific settings.",
+    "ro": "Am creat un program pentru compresia datelor, cu setări ajustabile."
+  },
+  "netlup-description-2": {
+    "en": "Implemented various compression techniques such as ZIP, GZIP, TAR, and more, using C++.",
+    "ro": "Am implementat diverse tehnici de compresie precum ZIP, GZIP, TAR, și altele, folosind C++."
+  },
+  "netlup-description-3": {
+    "en": "Designed an XML format to store meta-data, allowing for debugging and data restoration.",
+    "ro": "Am proiectat un format XML pentru stocarea metadatelor, permițând depanarea și restaurarea datelor."
+  },
+  "bs": {
+    "en": "BS in Computer Science",
+    "ro": "Facultatea de Informatică"
+  },
+  "university": {
+    "en": "University of Bucharest",
+    "ro": "Universitatea din București"
+  },
+  "university-from": {
+    "en": "October 2022",
+    "ro": "Octombrie 2022"
+  },
+  "university-to": {
+    "en": "Present",
+    "ro": "Prezent"
+  },
+  "university-description-1": {
+    "en": "Overall grade of 9.5 out of 10.",
+    "ro": "Medie generală de 9.5 din 10."
+  },
+  "university-description-2": {
+    "en": "Proficient in <strong>Algorithms</strong>, <strong>Data Structures</strong>, <strong>Object-Oriented Programming</strong>, and more.",
+    "ro": "Cunosc <strong>Algoritmi</strong>, <strong>Structuri de Date</strong>, <strong>Programare Orientată pe Obiecte</strong>, și altele."
+  },
+  "darex-description-1": {
+    "en": "Give and receive dares from your friends",
+    "ro": "Primește și completează provocări de la prietenii tăi"
+  },
+  "darex-description-2": {
+    "en": "Complete dares and earn points",
+    "ro": "Completează provocări și câștigă puncte"
+  },
+  "darex-description-3": {
+    "en": "Full-stack ios and android app",
+    "ro": "Aplicație full-stack pentru ios și android"
+  },
+  "darex-description-4": {
+    "en": "Hosted on cloud architecture",
+    "ro": "Funcționează pe arhitectură cloud"
+  },
+  "various-fits-description-1": {
+    "en": "Generate new outfits based on your preferences",
+    "ro": "Generează ținute noi bazate pe preferințele tale"
+  },
+  "various-fits-description-2": {
+    "en": "Share outfits with your friends",
+    "ro": "Distribuie ținutele tale cu prietenii"
+  },
+  "various-fits-description-3": {
+    "en": "Full-stack web and native app",
+    "ro": "Aplicație full-stack pentru web și nativă"
+  },
+  "various-fits-description-4": {
+    "en": "Hosted on cloud architecture",
+    "ro": "Funcționează pe arhitectură cloud"
+  },
+  "qpp-description-1": {
+    "en": "Quantum Computing SDK for simulating quantum circuits",
+    "ro": "SDK pentru simularea circuitelor cuantice"
+  },
+  "qpp-description-2": {
+    "en": "Helpful tools to visualize and debug circuits",
+    "ro": "Instrumente utile pentru vizualizarea și depanarea circuitelor"
+  },
+  "qpp-description-3": {
+    "en": "Built exclusively with C++",
+    "ro": "Construit exclusiv cu C++"
+  },
+  "qpp-description-4": {
+    "en": "Full documentation available",
+    "ro": "Documentație completă disponibilă"
+  },
+  "wast": {
+    "en": "WebAssembly Text Interpreter",
+    "ro": "Interpretor pentru WebAssembly Text"
+  },
+  "wast-description-1": {
+    "en": "Interpret WAST code",
+    "ro": "Interpretează cod WAST"
+  },
+  "wast-description-2": {
+    "en": "Supports syntax checking, conditional branching, and function calls",
+    "ro": "Suportă verificarea sintaxei, ramificarea condițională, și apeluri de funcții"
+  },
+  "wast-description-3": {
+    "en": "Supports compile-time and run-time errors",
+    "ro": "Suportă erori de compilare și de execuție"
+  },
+  "wast-description-4": {
+    "en": "Built exclusively with standard Python",
+    "ro": "Construit exclusiv cu Python standard"
+  }
+}
+

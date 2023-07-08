@@ -30,12 +30,16 @@ export class MainComponent {
   }
 
   public static readonly pageTitles: { [key in Page]: string } = {
-    [Page.ABOUT]: 'About Me',
-    [Page.PROJECTS]: 'Projects',
-    [Page.EXPERIENCE]: 'Experience'
+    [Page.ABOUT]: 'about-me',
+    [Page.EXPERIENCE]: 'experience',
+    [Page.PROJECTS]: 'projects'
   }
 
   protected readonly pageTitles = MainComponent.pageTitles;
+
+  protected get titles(): Page[] {
+    return Object.keys(this.pageTitles) as Page[];
+  }
 
   protected get currentPage(): Page | null {
     const url = this.router.url;
@@ -49,7 +53,7 @@ export class MainComponent {
     return null;
   }
 
-  public get title(): string{
+  public get title(): string {
     return this.currentPage ? MainComponent.pageTitles[this.currentPage] : '';
   }
 

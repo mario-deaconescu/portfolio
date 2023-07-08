@@ -1,9 +1,9 @@
 <article>
   <project-panel name="DareX" [features]="[
-'Give and receive dares from your friends',
-'Complete dares and earn points',
-'Full-stack ios and android app',
-'Hosted on cloud architecture',
+('darex-description-1' | translate | async) ?? '',
+('darex-description-2' | translate | async) ?? '',
+('darex-description-3' | translate | async) ?? '',
+('darex-description-4' | translate | async) ?? ''
 ]" [technologies]="[
 {icon: 'angular', scale: 1.3},
 {icon: 'aspnet', scale: 1.05},
@@ -29,10 +29,10 @@
 <mat-divider></mat-divider>
 <article>
   <project-panel name="Various Fits" [features]="[
-'Generate new outfits based on your preferences',
-'Share outfits with your friends',
-'Full-stack web and native app',
-'Hosted on cloud architecture',
+('various-fits-description-1' | translate | async) ?? '',
+('various-fits-description-2' | translate | async) ?? '',
+('various-fits-description-3' | translate | async) ?? '',
+('various-fits-description-4' | translate | async) ?? ''
 ]" [technologies]="[
 {icon: 'angular', scale: 1.3},
 {icon: 'django', scale: 1.3},
@@ -58,10 +58,10 @@
 <mat-divider></mat-divider>
 <article>
   <project-panel name="Q++" [features]="[
-'Quantum Computing SDK for simulating quantum circuits',
-'Helpful tools to visualize and debug circuits',
-'Built exclusively with C++',
-'Full documentation available',
+('qpp-description-1' | translate | async) ?? '',
+('qpp-description-2' | translate | async) ?? '',
+('qpp-description-3' | translate | async) ?? '',
+('qpp-description-4' | translate | async) ?? ''
 ]" [technologies]="[
 {icon: 'cplusplus', scale: 1.2},
 {icon: 'git', scale: 1.1},
@@ -73,11 +73,11 @@
 </article>
 <mat-divider></mat-divider>
 <article>
-  <project-panel name="WebAssembly Text Interpreter" [features]="[
-'Interpret WAST code',
-'Supports syntax checking, conditional branching, and function calls',
-'Supports compile-time and run-time errors',
-'Built exclusively with standard Python',
+  <project-panel [name]="('wast' | translate | async) ?? ''" [features]="[
+('wast-description-1' | translate | async) ?? '',
+('wast-description-2' | translate | async) ?? '',
+('wast-description-3' | translate | async) ?? '',
+('wast-description-4' | translate | async) ?? ''
 ]" [technologies]="[
 {icon: 'python', scale: 1.2},
 {icon: 'git', scale: 1.1},

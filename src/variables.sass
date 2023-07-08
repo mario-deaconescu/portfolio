@@ -12,6 +12,12 @@ $box-gradient: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%,
 $box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3)
 $gold-gradient-radial: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #d8b46a 30%, #c79f4b 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)
 
+@mixin container
+  background: $container-color
+  border: $container-border
+  border-radius: $border-radius
+  padding: $container-padding
+
 @mixin gold-text
   background: $gold-gradient-radial
   -webkit-background-clip: text

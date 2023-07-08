@@ -1,5 +1,8 @@
 <nav>
-  <a routerLink="about" [ngClass]="{'activated-route': currentPage == 'about'}">{{MainComponent.pageTitles['about']}}</a>
-  <a routerLink="experience" [ngClass]="{'activated-route': currentPage == 'experience'}">{{MainComponent.pageTitles['experience']}}</a>
-  <a routerLink="projects" [ngClass]="{'activated-route': currentPage == 'projects'}">{{MainComponent.pageTitles['projects']}}</a>
+  <a routerLink="about"
+     [ngClass]="{'activated-route': currentPage == 'about'}">{{MainComponent.pageTitles['about'] | translate | async}}</a>
+  <a routerLink="experience"
+     [ngClass]="{'activated-route': currentPage == 'experience'}">{{MainComponent.pageTitles['experience'] | translate | async}}</a>
+  <a routerLink="projects"
+     [ngClass]="{'activated-route': currentPage == 'projects'}">{{MainComponent.pageTitles['projects'] | translate | async}}</a>
 </nav>

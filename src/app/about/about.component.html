@@ -1,48 +1,44 @@
 <section>
   <p id="Introduction">
-    I am a software engineer from Romania, currently open to new opportunities. <br>
-    I code with passion and I love to learn new things.
+    {{'introduction1' | translate | async}} <br>
+    {{'introduction2' | translate | async}}
   </p>
 </section>
 
 <section>
-  <h2> What I Do </h2>
+  <h2> {{'what-i-do' | translate | async}} </h2>
   <div id="skills">
-    <skill skill="Front-End Development" svg="assets/web.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('frontend' | translate | async) ?? ''" svg="assets/web.svg" class="animate__animated animate__fadeInUp">
       <p>
-        Modern websites made by hand, with attention to detail.
+        {{'frontend-description' | translate | async}}
       </p>
     </skill>
-    <skill skill="Back-End Development" svg="assets/backend.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('backend' | translate | async) ?? ''" svg="assets/backend.svg" class="animate__animated animate__fadeInUp">
       <p>
-        Fast and secure server solutions, fitted to your needs.
+        {{'backend-description' | translate | async}}
       </p>
     </skill>
-    <skill skill="Systems Programming" svg="assets/systems.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('systems' | translate | async) ?? ''" svg="assets/systems.svg" class="animate__animated animate__fadeInUp">
       <p>
-        Develop high quality and efficient software using low-level languages.
+        {{'systems-description' | translate | async}}
       </p>
     </skill>
-    <skill skill="DevOps Engineering" svg="assets/devops.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('devops' | translate | async) ?? ''" svg="assets/devops.svg" class="animate__animated animate__fadeInUp">
       <p>
-        Manage and scale your project with ease, using the best technologies.
+        {{'devops-description' | translate | async}}
       </p>
     </skill>
   </div>
 </section>
 
 <section>
-  <h2> Awards </h2>
+  <h2> {{'awards' | translate | async}} </h2>
   <div id="awards">
-    <award class="animate__animated animate__zoomIn" [name]="screenSize.isMobile ? 'National Olympiad' : 'Programming Olympiad'" image="assets/medal.png">
-      <p>
-        Multiple awards at the National Programming Olympiad during 2015-2021, including a <strong>silver medal</strong>.
-      </p>
+    <award class="animate__animated animate__zoomIn" [name]="((screenSize.isMobile ? 'national-olympiad' : 'programming-olympiad') | translate | async) ?? ''" image="assets/medal.png">
+      <p [innerHTML]="'olympiad-description' | translate | async"></p>
     </award>
     <award class="animate__animated animate__zoomIn" name="First Tech Challenge" image="assets/ftc.png">
-      <p>
-        Leader of robotics team that won national and international awards at the <strong>First Tech Challenge</strong> competition.
-      </p>
+      <p [innerHTML]="'ftc-description' | translate | async"></p>
     </award>
   </div>
 </section>

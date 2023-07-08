@@ -1,27 +1,32 @@
 <section>
-  <timeline name="Work" icon="briefcase">
+  <timeline [name]="('work' | translate | async) ?? ''" icon="briefcase">
     <ng-template>
-      <timeline-item name="Software Engineer Intern" secondaryName="DIGINESIS" from="August 2022" to="October 2022">
+      <timeline-item [name]="('software-engineer-intern' | translate | async) ?? ''" secondaryName="DIGINESIS"
+                     [from]="('diginesis-from' | translate | async) ?? ''"
+                     [to]="('diginesis-to' | translate | async) ?? ''">
         <ul class="timeline-description">
-          <li class="animate__animated animate__fadeInRight">Developed new <strong>ERP</strong> software using Python.
+          <li class="animate__animated animate__fadeInRight">
+            {{'diginesis-description-1' | translate | async}}
           </li>
-          <li class="animate__animated animate__fadeInRight">Worked alongside senior software engineers and
-            product managers.
+          <li class="animate__animated animate__fadeInRight">
+            {{'diginesis-description-2' | translate | async}}
           </li>
         </ul>
       </timeline-item>
     </ng-template>
     <ng-template>
-      <timeline-item name="Software Developer" secondaryName="NETLUP TECHNOLOGIES" from="June 2022" to="September 2022">
+      <timeline-item [name]="('software-developer' | translate | async) ?? ''" secondaryName="NETLUP TECHNOLOGIES"
+                     [from]="('netlup-from' | translate | async) ?? ''"
+                     [to]="('netlup-to' | translate | async) ?? ''">
         <ul class="timeline-description">
           <li class="animate__animated animate__fadeInRight">
-            Created a command-line tool for data compression with specific settings.
+            {{'netlup-description-1' | translate | async}}
           </li>
           <li class="animate__animated animate__fadeInRight">
-            Implemented various compression techniques such as ZIP, GZIP, TAR, and more, using <strong>C++</strong>.
+            {{'netlup-description-2' | translate | async}}
           </li>
           <li class="animate__animated animate__fadeInRight">
-            Designed an XML format to store meta-data, allowing for debugging and data restoration.
+            {{'netlup-description-3' | translate | async}}
           </li>
         </ul>
       </timeline-item>
@@ -30,17 +35,18 @@
 </section>
 
 <section>
-  <timeline name="Education" icon="book">
+  <timeline [name]="('education' | translate | async) ?? ''" icon="book">
     <ng-template>
-      <timeline-item name="BS in Computer Science" secondaryName="University of Bucharest" from="October 2022"
-                     to="Present">
+      <timeline-item [name]="('bs' | translate | async) ?? ''"
+                     [secondaryName]="('university' | translate | async) ?? ''"
+                     [from]="('university-from' | translate | async) ?? ''"
+                     [to]="('university-to' | translate | async) ?? ''">
         <ul class="timeline-description">
           <li class="animate__animated animate__fadeInRight">
-            Overall grade of <strong>9.5</strong> out of 10.
+            {{'university-description-1' | translate | async}}
           </li>
-          <li class="animate__animated animate__fadeInRight">
-            Proficient in <strong>Algorithms</strong>, <strong>Data Structures</strong>, <strong>Object-Oriented
-            Programming</strong>, and more.
+          <li class="animate__animated animate__fadeInRight"
+              [innerHTML]="'university-description-2' | translate | async"></li>
         </ul>
       </timeline-item>
     </ng-template>

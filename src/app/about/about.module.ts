@@ -4,6 +4,7 @@ import { AboutComponent } from './about.component';
 import {AboutRoutingModule} from "./about-routing.module";
 import { SkillsComponent } from './skills/skills.component';
 import { AwardComponent } from './award/award.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -13,10 +14,11 @@ import { AwardComponent } from './award/award.component';
     SkillsComponent,
     AwardComponent
   ],
-  imports: [
-    CommonModule,
-    AboutRoutingModule,
-    NgOptimizedImage
-  ]
+    imports: [
+        CommonModule,
+        AboutRoutingModule,
+        NgOptimizedImage,
+        SharedModule
+    ]
 })
 export class AboutModule { }
