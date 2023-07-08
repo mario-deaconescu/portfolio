@@ -1,0 +1,27 @@
+@import "/src/variables"
+
+#language-picker-container
+  @include container
+
+  padding: calc($container-padding / 2) $container-padding
+
+  *
+    vertical-align: middle
+
+  label
+    font-size: 1.1rem
+    margin-left: 1rem
+    color: white
+    font-weight: 200
+
+  #language-pick-input
+    $size: 2.5rem
+    width: $size
+    height: $size
+    font-size: 1.8rem
+    background: $box-gradient
+    border: 0
+    border-radius: calc($border-radius / 2)
+    appearance: none
+    text-align: center
+    box-shadow: $box-shadow

@@ -13,26 +13,35 @@ star-background
   align-items: center
 
   #content
+    $gap: 2rem
+    @media screen and (max-width: $mobile-breakpoint)
+      $gap: 1rem
     display: flex
     flex-direction: row
     justify-content: center
-    gap: 2rem
+    gap: $gap
     padding: calc($container-padding / 2)
     flex-wrap: wrap
     margin: auto
     width: $width
-    max-width: calc(100% - 2 * $container-padding)
+    max-width: calc(100% - $container-padding)
     flex-shrink: 1
     min-height: 0
 
     @media screen and (max-width: $mobile-breakpoint)
       margin-bottom: 3rem
 
-    contact, main-content
+    #content-left
+      display: flex !important
+      flex-direction: column
+      gap: $gap
+
+    #content-left, main-content
       min-width: 0
       display: block
       flex-shrink: 1
       flex-grow: 0
+      z-index: 10
 
     main-content
       @media screen and (min-width: $width + 2 * $container-padding)
@@ -41,7 +50,7 @@ star-background
       max-height: 100%
 
     @media screen and (max-width: $width + 2 * $container-padding)
-      contact, main-content
+      #content-left, main-content
         flex-grow: 1
         max-width: 100%
 
@@ -54,4 +63,5 @@ star-background
     position: fixed
     bottom: 0
     width: 100%
+    z-index: 100
 

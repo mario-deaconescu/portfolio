@@ -1,16 +1,14 @@
 <main>
   <div id="main-content-wrapper">
     <h1>
-      <smooth-text [input]="title"></smooth-text>
+      <smooth-text [input]="(title | translate | async) ?? ''"></smooth-text>
     </h1>
     <div id="route-wrapper" [@routeAnimation]="getRouteAnimationData()" [smoothHeight]="currentPage">
       <router-outlet></router-outlet>
     </div>
   </div>
   <nav id="desktop-nav" *ngIf="!screenSize.isMobile">
-    <a routerLink="about" [ngClass]="{'activated-route': currentPage == 'about'}">{{pageTitles['about']}}</a>
-    <a routerLink="experience"
-       [ngClass]="{'activated-route': currentPage == 'experience'}">{{pageTitles['experience']}}</a>
-    <a routerLink="projects" [ngClass]="{'activated-route': currentPage == 'projects'}">{{pageTitles['projects']}}</a>
+    <a *ngFor="let page of titles" [routerLink]="page"
+       [ngClass]="{'activated-route': currentPage === page}">{{pageTitles[page] | translate | async}}</a>
   </nav>
 </main>

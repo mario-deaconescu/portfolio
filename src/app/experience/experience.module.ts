@@ -4,6 +4,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { ExperienceComponent } from './experience.component';
 import {ExperienceRoutingModule} from "./experience-routing.module";
 import { TimelineItemComponent } from './timeline/timeline-item/timeline-item.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -15,7 +16,8 @@ import { TimelineItemComponent } from './timeline/timeline-item/timeline-item.co
   ],
   imports: [
     CommonModule,
-    ExperienceRoutingModule
+    ExperienceRoutingModule,
+    SharedModule
   ]
 })
 export class ExperienceModule { }

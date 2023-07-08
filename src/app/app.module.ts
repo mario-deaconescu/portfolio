@@ -14,6 +14,10 @@ import {RouterLink} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
 import {SharedModule} from "./shared/shared.module";
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+import { LanguagePickerComponent } from './language-picker/language-picker.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 @NgModule({
   declarations: [
@@ -22,7 +26,8 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     StarBackgroundComponent,
     ContactFieldComponent,
     MainComponent,
-    MobileNavComponent
+    MobileNavComponent,
+    LanguagePickerComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,10 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     MatIconModule,
     RouterLink,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
