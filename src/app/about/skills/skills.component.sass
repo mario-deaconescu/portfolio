@@ -10,6 +10,12 @@
   gap: 1rem
   //background: rgba(35, 35, 35, 0.68)
   background: $box-gradient
+  transition: scale 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+
+  &:hover
+    scale: 1.05
+    box-shadow: $box-shadow
+
 
   img
     $size: 4rem
