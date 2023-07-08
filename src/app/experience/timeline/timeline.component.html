@@ -1,0 +1,13 @@
+<div class="timeline-title">
+  <div class="timeline-title-icon">
+    <i class="bi" [ngClass]="'bi-' + icon"></i>
+  </div>
+  <h2>{{ name }}</h2>
+</div>
+<ul class="timeline-list">
+  <ng-template ngFor let-item [ngForOf]="items()">
+    <li class="timeline-item">
+      <ng-container *ngTemplateOutlet="item; context: { $implicit: item }"></ng-container>
+    </li>
+  </ng-template>
+</ul>

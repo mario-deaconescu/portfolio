@@ -1,0 +1,30 @@
+@import "/src/variables"
+
+.skill
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: calc($container-padding / 2)
+  //border: $container-border
+  border-radius: $border-radius
+  gap: 1rem
+  //background: rgba(35, 35, 35, 0.68)
+  background: $box-gradient
+
+  img
+    $size: 4rem
+
+    @media screen and (max-width: $mobile-breakpoint)
+      $size: 3rem
+
+    width: $size
+    height: $size
+
+  .skill-info
+    h3
+      font-weight: 400
+      margin-top: 0
+      margin-bottom: 0
+
+      @media screen and (max-width: $mobile-breakpoint)
+        margin-bottom: .2rem

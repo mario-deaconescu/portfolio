@@ -1,0 +1,51 @@
+@import "/src/variables"
+
+$mockup-aspect-ratio: 1.92816091954023
+$mockup-video-width: 8rem
+$mockup-video-height: calc($mockup-video-width * $mockup-aspect-ratio)
+$mockup-video-margin-horizontal: 1rem
+$mockup-video-margin-vertical: 1rem
+
+#darex-video-wrapper, #vf-video-wrapper
+  width: $mockup-video-width
+  height: $mockup-video-height + $mockup-video-margin-vertical
+  margin: 0
+  border-radius: 36px
+  video
+    position: relative
+    width: $mockup-video-width + $mockup-video-margin-horizontal
+    height: calc(($mockup-video-width + $mockup-video-margin-horizontal) * $mockup-aspect-ratio)
+    right: calc($mockup-video-margin-horizontal / 2)
+    bottom: calc($mockup-video-margin-vertical / 2)
+
+#qpp-logo
+  width: $mockup-video-width
+  margin: 0
+  img
+    width: 100%
+    height: auto
+
+#asc-logo
+  width: $mockup-video-width
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0
+  #python, #wasm
+    width: 100%
+    height: auto
+  .bi
+    font-size: 4rem
+    line-height: 2rem
+    margin: -1rem auto 0
+
+mat-divider
+  width: 95%
+  margin: 0 auto
+
+#projects-scroller
+
+  @media screen and (min-width: 90rem + 2 * $container-padding)
+    max-height: calc(50vh + 12rem)
+    overflow-y: auto !important
+    overflow-x: hidden !important

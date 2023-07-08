@@ -1,0 +1,18 @@
+@import "/src/variables"
+
+nav
+  padding: calc($container-padding / 2) $container-padding
+  width: calc(100% - 2 * $container-padding)
+  display: flex
+  flex-direction: row
+  gap: 1.2rem
+  justify-content: space-evenly
+  background: rgba(39, 39, 39, 0.84)
+  backdrop-filter: $container-blur
+  border-radius: calc($border-radius / 2) calc($border-radius / 2) 0 0
+
+  a
+    font-weight: 400
+
+  .activated-route
+    color: $accent-color

@@ -1,0 +1,11 @@
+@import "/src/variables"
+
+.timeline-description
+  font-weight: 200
+
+  @media screen and (max-width: $mobile-breakpoint)
+    padding-left: 1rem
+
+  @for $i from 1 through 10
+    li:nth-child(#{$i})
+      animation-delay: #{$i * 0.1}s

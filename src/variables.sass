@@ -1,0 +1,27 @@
+$mobile-breakpoint: 768px
+
+$border-color: rgba(255, 255, 255, 0.19)
+$container-border: 1px solid $border-color
+$container-blur: blur(3px)
+$container-padding: 2rem
+$container-color: rgba(53, 53, 53, 0.25)
+$accent-color: #d8b46a
+$backdrop-color: rgba(116, 116, 116, 0.2)
+$border-radius: 20px
+$box-gradient: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 12%, 0.44) 50% )
+$box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3)
+$gold-gradient-radial: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #d8b46a 30%, #c79f4b 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)
+
+@mixin gold-text
+  background: $gold-gradient-radial
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+@mixin gold-bullet($bullet-size: 0.6rem, $border-width: 5px, $line-color: #3f3f3f)
+  content: ""
+  position: absolute
+  width: $bullet-size
+  height: $bullet-size
+  background: $gold-gradient-radial
+  border-radius: 50%
+  border: $border-width solid $line-color

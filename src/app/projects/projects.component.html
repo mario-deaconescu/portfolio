@@ -1,0 +1,101 @@
+<div id="projects-scroller">
+  <article>
+    <project-panel name="DareX" [features]="[
+'Give and receive dares from your friends',
+'Complete dares and earn points',
+'Full-stack ios and android app',
+'Hosted on cloud architecture',
+]" [technologies]="[
+{icon: 'angular', scale: 1.3},
+{icon: 'aspnet', scale: 1.05},
+{icon: 'azure'},
+{icon: 'firebase'},
+{icon: 'capacitor'},
+]">
+      <figure id="darex-video-wrapper" left>
+        <video autoplay loop muted playsinline onloadedmetadata="this.muted = true" oncanplay="this.play()"
+               data-aos="fade-right">
+          <!-- Provide the Safari video -->
+          <source *ngIf="platform.SAFARI || platform.IOS"
+                  [src]="'static-other/darex-hevc-safari.mp4' | CDN"
+                  type='video/mp4; codecs="hvc1"'>
+          <!-- .. and the Chrome video -->
+          <source *ngIf="platform.WEBKIT || platform.BLINK"
+                  [src]="'static-other/darex-vp9-chrome.webm' | CDN"
+                  type="video/webm">
+        </video>
+      </figure>
+    </project-panel>
+  </article>
+  <mat-divider></mat-divider>
+  <article>
+    <project-panel name="Various Fits" [features]="[
+'Generate new outfits based on your preferences',
+'Share outfits with your friends',
+'Full-stack web and native app',
+'Hosted on cloud architecture',
+]" [technologies]="[
+{icon: 'angular', scale: 1.3},
+{icon: 'django', scale: 1.3},
+{icon: 'googlecloud', scale: 0.95},
+{icon: 'postgres'},
+]">
+      <figure id="vf-video-wrapper" left>
+        <video autoplay loop muted playsinline onloadedmetadata="this.muted = true" oncanplay="this.play()"
+               data-aos="fade-right">
+          <!-- Provide the Safari video -->
+          <source *ngIf="platform.SAFARI || platform.IOS"
+                  [src]="'static-other/vf-hevc-safari.mp4' | CDN"
+                  type='video/mp4; codecs="hvc1"'>
+          <!-- .. and the Chrome video -->
+          <source *ngIf="platform.WEBKIT || platform.BLINK"
+                  [src]="'static-other/vf-vp9-chrome.webm' | CDN"
+                  type="video/webm">
+
+        </video>
+      </figure>
+    </project-panel>
+  </article>
+  <mat-divider></mat-divider>
+  <article>
+    <project-panel name="Q++" [features]="[
+'Quantum Computing SDK for simulating quantum circuits',
+'Helpful tools to visualize and debug circuits',
+'Built exclusively with C++',
+'Full documentation available',
+]" [technologies]="[
+{icon: 'cplusplus', scale: 1.2},
+{icon: 'git', scale: 1.1},
+]">
+      <figure id="qpp-logo" left>
+        <img ngSrc="assets/q++.svg" alt="Q++ Logo" width="300" height="300">
+      </figure>
+    </project-panel>
+  </article>
+  <mat-divider></mat-divider>
+  <article>
+    <project-panel name="WebAssembly Text Interpreter" [features]="[
+'Interpret WAST code',
+'Supports syntax checking, conditional branching, and function calls',
+'Supports compile-time and run-time errors',
+'Built exclusively with standard Python',
+]" [technologies]="[
+{icon: 'python', scale: 1.2},
+{icon: 'git', scale: 1.1},
+]">
+      <figure id="asc-logo" left>
+        <img id="python"
+             ngSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/2048px-Python_logo_01.svg.png"
+             width="150"
+             height="150"
+             alt="PYTHON"/>
+        <i class="bi bi-plus"></i>
+        <img id="wasm"
+             ngSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png"
+             width="150"
+             height="150"
+             alt="WASM"/>
+      </figure>
+    </project-panel>
+  </article>
+</div>

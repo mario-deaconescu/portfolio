@@ -1,0 +1,40 @@
+@import "/src/variables"
+
+.contact-field
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 1rem
+  width: 100%
+  .contact-field-icon
+    $size: 2.5rem
+    width: $size
+    height: $size
+    border-radius: calc($border-radius / 2)
+    background: $box-gradient
+    box-shadow: $box-shadow
+    position: relative
+    flex-shrink: 0
+    .bi
+      color: white
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      //@include gold-text
+
+  .contact-field-content
+    min-width: 0
+    flex-shrink: 1
+    .contact-field-value, .contact-field-label
+      display: block
+    label
+      margin-bottom: -.1rem
+    .contact-field-value
+      width: 100%
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      max-width: 100%
+

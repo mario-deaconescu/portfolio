@@ -1,0 +1,66 @@
+@import "/src/variables"
+
+$icon-size: 3rem
+$gap-size: 1rem
+$line-color: #3f3f3f
+$bullet-size: 0.6rem
+$border-width: 5px
+
+@mixin list-line($line-width: 1px, $height: 100%)
+  content: ""
+  position: absolute
+  width: $line-width
+  height: $height
+  background: $line-color
+
+.timeline-list
+  list-style-type: none
+  padding-left: $icon-size + $gap-size
+
+  .timeline-item
+    position: relative
+
+    &:after
+      @include gold-bullet($bullet-size, $border-width, $line-color)
+      top: calc((1.75rem - #{$bullet-size}) / 2 - #{$border-width})
+      left: calc((-#{$icon-size} - #{$bullet-size}) / 2 - #{$gap-size} - #{$border-width})
+
+  li:not(:last-child)
+    margin-bottom: 1rem
+
+    &:before
+      $line-width: 1px
+      @include list-line($line-width)
+      left: calc((-#{$icon-size} - #{$line-width}) / 2 - #{$gap-size})
+      top: calc((1.75rem + #{$bullet-size}) / 2 + #{$border-width})
+
+.timeline-title
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: $gap-size
+  position: relative
+
+  &:before
+    $line-width: 1px
+    @include list-line($line-width, calc(#{$gap-size} + .3rem))
+    left: calc((#{$icon-size} + #{$line-width}) / 2)
+    top: $icon-size
+
+  .timeline-title-icon
+    width: $icon-size
+    height: $icon-size
+    position: relative
+    background: $box-gradient
+    border-radius: calc($border-radius / 2)
+    box-shadow: $box-shadow
+
+    .bi
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      @include gold-text
+
+  h2
+    margin: 0

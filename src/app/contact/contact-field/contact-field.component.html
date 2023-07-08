@@ -1,0 +1,10 @@
+<div class="contact-field">
+  <div class="contact-field-icon">
+    <i class="bi" [ngClass]="'bi-' + icon"></i>
+  </div>
+  <div class="contact-field-content">
+    <label class="contact-field-label">{{label.toUpperCase()}}</label>
+    <a *ngIf="link !== undefined" class="contact-field-value" [href]="link" target="_blank">{{value}}</a>
+    <span *ngIf="link === undefined" class="contact-field-value">{{value}}</span>
+  </div>
+</div>

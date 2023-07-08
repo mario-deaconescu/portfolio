@@ -1,0 +1,103 @@
+@import "src/variables"
+
+@keyframes memoji-scale
+  0%
+    transform: scale(1)
+  25%
+    transform: scale(1.1) rotate(5deg)
+  50%
+    transform: scale(1)
+  75%
+    transform: scale(1.1) rotate(-5deg)
+  100%
+    transform: scale(1)
+
+#contact-wrapper
+  display: flex
+  flex-direction: column
+  border-radius: $border-radius
+  background: $container-color
+  padding: $container-padding
+  backdrop-filter: $container-blur
+  border: $container-border
+  width: calc(100% - 2 * $container-padding - 2px)
+
+  #me-wrapper
+    display: flex
+    flex-direction: row
+    gap: 1.5rem
+    align-items: center
+
+    #picture-wrapper
+      padding: 1rem
+      @media screen and (max-width: $mobile-breakpoint)
+        padding: .5rem
+      background: $backdrop-color
+      border-radius: $border-radius
+      width: fit-content
+      margin: 0
+
+      img
+        $size: 7rem
+        @media screen and (max-width: $mobile-breakpoint)
+          $size: 5rem
+        width: $size
+        height: $size
+        animation: memoji-scale 5s ease-in-out infinite
+
+    #title-wrapper
+      text-align: center
+
+      h2
+        margin: auto
+        padding: 0
+
+      h3
+        font-size: 1rem
+        margin: .5rem auto
+        border-radius: calc($border-radius / 2)
+        background: #333333
+        padding: 0.2rem 0.5rem
+        width: fit-content
+        color: rgba(255, 255, 255, 0.78)
+
+        @media screen and (max-width: $mobile-breakpoint)
+          font-size: .9rem
+
+  #extended-info
+    overflow: hidden
+
+    mat-divider
+      margin: 1.5rem 0
+
+    #contact-list
+      display: flex
+      flex-direction: column
+      gap: 1.5rem
+      a
+        display: block
+        position: relative
+        transition: margin-left 0.2s ease-in-out
+        &:hover
+          margin-left: .7rem
+
+  #contact-expand-button
+    margin: 1rem auto -.5rem
+    $button-size: 4rem
+    width: $button-size
+    height: fit-content
+    padding: .2rem
+    position: relative
+    border: none
+    background: $backdrop-color
+    border-radius: 1rem
+
+    i
+      display: inline-block
+      font-size: 1.2rem
+      color: white
+      transition: transform .5s ease-in-out
+      transform: rotate(0deg)
+
+    .rotated-arrow
+      transform: rotate(180deg)

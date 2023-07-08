@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "personal-portfolio-mario": {
+      "hosting": {
+        "NewPortfolio": [
+          "personal-portfolio-mario"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "personal-portfolio-mario"
+  }
+}

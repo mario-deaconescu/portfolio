@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "NewPortfolio",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

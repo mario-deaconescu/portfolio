@@ -1,0 +1,73 @@
+@import "/src/variables"
+
+.project
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: $container-padding
+  @media screen and (max-width: $mobile-breakpoint)
+    padding: $container-padding 0
+  gap: 2rem
+  flex-wrap: wrap
+
+  .project-left, .project-right
+    flex-shrink: 1
+    min-width: 5rem
+
+  @media screen and (max-width: $mobile-breakpoint)
+    justify-content: center
+  h2
+    margin: 0
+
+  ul
+    list-style-type: none
+
+    .feature
+      position: relative
+      font-size: 1rem
+
+      &:after
+        @include gold-bullet
+        left: -2rem
+        top: .1rem
+
+      &:not(:last-child)
+        margin-bottom: .5rem
+
+      @for $i from 1 through 10
+        &:nth-child(#{$i})
+          animation-delay: #{($i - 1) * 0.1}s
+
+  .project-tech
+    display: flex
+    flex-direction: row
+    gap: 1rem
+    flex-wrap: wrap
+    @media screen and (max-width: $mobile-breakpoint)
+      justify-content: center
+
+    .tech-icon
+      $size: 4rem
+      @media screen and (max-width: $mobile-breakpoint)
+        $size: 3rem
+      width: $size
+      height: $size
+      background: $box-gradient
+      border-radius: calc($border-radius / 2)
+      box-shadow: $box-shadow
+      display: flex
+      justify-content: center
+      align-items: center
+      transition: scale 0.2s ease-in-out
+      flex-shrink: 0
+
+      @for $i from 1 through 10
+        &:nth-child(#{$i})
+          animation-delay: #{($i - 1) * 0.2}s
+
+      &:hover
+        scale: 1.1
+
+      img
+        height: 60%
+        width: auto

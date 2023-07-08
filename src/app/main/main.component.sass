@@ -1,0 +1,59 @@
+@import "/src/variables"
+
+main
+  background: $container-color
+  border: $container-border
+  border-radius: $border-radius
+  padding: $container-padding
+  backdrop-filter: $container-blur
+  position: relative
+  width: calc(100% - 2 * $container-padding - 2px)
+  transition: all 1s ease
+  overflow: hidden
+  max-height: calc(100% - 2 * $container-padding - 2px)
+
+  @media screen and (max-width: $mobile-breakpoint)
+    width: calc(100% - 2 * $container-padding)
+    h1
+      margin-top: 0
+
+  nav
+    position: absolute
+    top: 0
+    right: 0
+    padding: calc($container-padding / 2) $container-padding
+    display: flex
+    flex-direction: row
+    gap: 1.2rem
+    border-left: $container-border
+    border-bottom: $container-border
+    border-radius: 0 $border-radius
+    background: rgba(81, 81, 81, 0.15)
+
+    a
+      font-weight: 400
+      transition: all 0.2s ease-in-out
+
+      &:hover
+        text-decoration: none
+        color: $accent-color
+        scale: 1.05
+
+    .activated-route
+      color: $accent-color
+
+  h1::after
+    content: ""
+    display: block
+    $height: 7px
+    width: 50px
+    height: $height
+    background: $gold-gradient-radial
+    border-radius: calc($height / 2)
+    margin-top: .5rem
+
+  #route-wrapper
+      width: calc(100% + 0 * $container-padding)
+      left: calc(-1 * $container-padding)
+      position: relative
+      padding: 0 $container-padding

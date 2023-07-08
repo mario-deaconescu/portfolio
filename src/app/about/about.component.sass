@@ -1,0 +1,26 @@
+@import "/src/variables"
+
+#skills, #awards
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 1rem
+
+  @media screen and (max-width: $mobile-breakpoint)
+    grid-template-columns: 1fr
+
+  @for $i from 1 through 4
+    skill:nth-child(#{$i})
+      animation-delay: #{($i - 1) * 0.1}s
+
+  skill
+    transition: scale 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+
+    &:hover
+      scale: 1.05
+      box-shadow: $box-shadow
+
+  skill, award
+    p
+      margin: 0
+
+

@@ -1,0 +1,51 @@
+@import "/src/variables"
+
+.award-container
+  $image-size: 4rem
+  margin-top: calc($image-size / 2)
+  padding: calc($container-padding / 2) $container-padding
+  border-radius: $border-radius
+  gap: 1rem
+  background: $box-gradient
+  transition: scale 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+  position: relative
+
+  &:hover
+    scale: 1.05
+    box-shadow: $box-shadow
+
+  @media screen and (max-width: $mobile-breakpoint)
+    $image-size: 3rem
+
+  .award-picture
+    width: $image-size
+    height: $image-size
+    position: absolute
+    left: calc($container-padding)
+    top: calc(2rem - $image-size)
+    background: #434343
+    border-radius: $border-radius
+    padding: calc($container-padding / 4)
+    //border: $container-border
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3)
+    margin: 0
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+
+  .award-name
+    position: relative
+    left: calc($image-size + $container-padding)
+    margin: 0 0 1rem
+
+  @media screen and (max-width: $mobile-breakpoint)
+    padding: calc($container-padding / 2) calc($container-padding / 1.5)
+
+    .award-picture
+      top: calc(2rem - $image-size)
+      left: calc($container-padding / 2)
+
+    .award-name
+      left: calc($image-size + $container-padding / 1.5)

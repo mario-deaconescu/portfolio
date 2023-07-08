@@ -1,0 +1,18 @@
+<div class="project">
+  <div class="project-left">
+    <ng-content select="[left]"></ng-content>
+  </div>
+  <div class="project-right">
+    <h2> {{ name }}</h2>
+    <ul>
+      <li class="feature animate__animated animate__fadeInRight" *ngFor="let feature of features">
+        <span>{{ feature }}</span>
+      </li>
+    </ul>
+    <div class="project-tech">
+      <div class="tech-icon animate__animated animate__zoomIn" *ngFor="let tech of technologies">
+        <img [ngSrc]="'static-images/icons/' + tech.icon + '.webp' | CDN" alt="{{ tech }}" width="50" height="50" [ngStyle]="{'scale': tech.scale ?? 1}">
+      </div>
+    </div>
+  </div>
+</div>
