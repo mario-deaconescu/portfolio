@@ -67,7 +67,7 @@
 {icon: 'git', scale: 1.1},
 ]">
     <figure id="qpp-logo" left>
-      <img ngSrc="assets/q++.svg" alt="Q++ Logo" width="300" height="300">
+      <img ngSrc="assets/q++.svg" alt="Q++ Logo" width="300" height="300" [priority]="true">
     </figure>
   </project-panel>
 </article>
@@ -87,13 +87,15 @@
            ngSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/2048px-Python_logo_01.svg.png"
            width="150"
            height="150"
-           alt="PYTHON"/>
+           alt="PYTHON"
+           [priority]="true"/>
       <i class="bi bi-plus"></i>
       <img id="wasm"
            ngSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png"
            width="150"
            height="150"
-           alt="WASM"/>
+           alt="WASM"
+           [priority]="true"/>
     </figure>
   </project-panel>
 </article>
