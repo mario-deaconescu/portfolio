@@ -15,13 +15,20 @@
     font-weight: 200
 
   #language-pick-input
+    $width-ratio: 1.8125
+    $height-ratio: 2.5
     $size: 2.5rem
-    width: $size
-    height: $size
+    $content-width: calc(1rem * $width-ratio)
+    $content-height: calc(1rem * $height-ratio)
+    $horizontal-padding: calc(($size - $content-width) / 2)
+    $vertical-padding: calc(($size - $content-height) / 2)
+    width: $content-width + $horizontal-padding * 2
+    height: $content-height + $vertical-padding * 2
     font-size: 1.8rem
     background: $box-gradient
     border: 0
     border-radius: calc($border-radius / 2)
     appearance: none
-    text-align: center
     box-shadow: $box-shadow
+    font-weight: normal
+    padding: $vertical-padding $horizontal-padding

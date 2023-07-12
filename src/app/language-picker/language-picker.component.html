@@ -1,7 +1,7 @@
 <div id="language-picker-container">
   <select name="language-pick-input" id="language-pick-input" (change)="onLanguageChange($event)">
     <option *ngFor="let language of languages" [value]="language.code">
-      {{language.icon}}
+      <span>{{language.icon}}</span>
     </option>
   </select>
   <label for="language-pick-input">{{'language' | translate | async}}</label>
