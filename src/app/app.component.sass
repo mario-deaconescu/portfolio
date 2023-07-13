@@ -5,12 +5,17 @@ star-background
   width: 100%
   height: 100%
 
+
 #wrapper
   $width: 90rem
+  $wrap-width: $width + 2 * $container-padding
   width: 100%
+  @media screen and (min-width: $wrap-width)
+    height: 100%
   display: flex
   flex-direction: column
   align-items: center
+  justify-content: center
 
   #content
     $gap: 2rem
@@ -44,19 +49,19 @@ star-background
       z-index: 10
 
     main-content
-      @media screen and (min-width: $width + 2 * $container-padding)
+      @media screen and (min-width: $wrap-width)
         min-width: 56rem
       max-width: 56rem
       max-height: 100%
 
-    @media screen and (max-width: $width + 2 * $container-padding)
+    @media screen and (max-width: $wrap-width)
       #content-left, main-content
         flex-grow: 1
         max-width: 100%
 
 
-    @media screen and (min-width: $width + 2 * $container-padding)
-      height: calc(100dvh - $container-padding)
+    @media screen and (min-width: $wrap-width)
+      max-height: calc(100dvh - $container-padding)
 
 
   mobile-nav
