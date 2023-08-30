@@ -23,6 +23,25 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 export class ContactComponent {
 
   private extended: boolean = false;
+  protected readonly info = new class {
+    readonly email: string = 'contact@mariodeaconescu.com';
+    readonly phone: string = '40743141535';
+    readonly github: string = 'mario-deaconescu';
+    readonly linkedin: string = 'mario-deaconescu';
+    get phoneFormatted(): string {
+      const regex = /[0-9]{1,3}/g;
+      const groups = this.phone.split('').reverse().join('').match(regex)?.reverse().map(
+        group => group.split('').reverse().join('')
+      );
+      return groups ? '+' + groups.join(' ') : '';
+    }
+    get githubUrl(): string {
+      return `https://github.com/${this.github}`;
+    }
+    get linkedinUrl(): string {
+      return `https://www.linkedin.com/in/${this.linkedin}`;
+    }
+  };
 
   constructor(protected screenSize: ScreenSize) { }
 

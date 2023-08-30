@@ -12,19 +12,19 @@
   <div id="extended-info" [@openClose]="isExtended ? 'open' : 'closed'">
     <mat-divider></mat-divider>
     <div id="contact-list">
-      <a href="mailto:mariodeaconescu2003@gmail.com">
-        <contact-field label="Email" value="mariodeaconescu2003@gmail.com" icon="at"></contact-field>
+      <a [href]="'mailto:' + info.email">
+        <contact-field label="Email" [value]="info.email" icon="at"></contact-field>
       </a>
-      <a href="tel:40743141535">
-        <contact-field [label]="('phone' | translate | async) ?? ''" value="+40 743 141 535" icon="phone"></contact-field>
+      <a [href]="'tel:' + info.phone">
+        <contact-field [label]="('phone' | translate | async) ?? ''" [value]="info.phoneFormatted" icon="phone"></contact-field>
       </a>
-      <a href="https://github.com/mario-deaconescu" target="_blank">
-        <contact-field label="GitHub" value="github.com/mario-deaconescu" icon="github"
-                       link="https://github.com/mario-deaconescu"></contact-field>
+      <a [href]="info.githubUrl" target="_blank">
+        <contact-field label="GitHub" [value]="info.github" icon="github"
+                       [link]="info.githubUrl"></contact-field>
       </a>
-      <a href="https://www.linkedin.com/in/mario-deaconescu/" target="_blank">
-        <contact-field label="LinkedIn" value="linkedin.com/in/mario-deaconescu" icon="linkedin"
-                       link="https://www.linkedin.com/in/mario-deaconescu/"></contact-field>
+      <a [href]="info.linkedinUrl" target="_blank">
+        <contact-field label="LinkedIn" [value]="info.linkedin" icon="linkedin"
+                       [link]="info.linkedinUrl"></contact-field>
       </a>
     </div>
   </div>
