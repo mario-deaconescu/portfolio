@@ -24,7 +24,7 @@ export class ContactComponent {
 
   private extended: boolean = false;
   protected readonly info = new class {
-    readonly email: string = 'contact@mariodeaconescu.com';
+    readonly email: string = 'mariodeaconescu@outlook.com';
     readonly phone: string = '40743141535';
     readonly github: string = 'mario-deaconescu';
     readonly linkedin: string = 'mario-deaconescu';
