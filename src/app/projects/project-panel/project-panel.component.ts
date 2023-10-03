@@ -15,5 +15,12 @@ export class ProjectPanelComponent {
   @Input() name!: string;
   @Input() features!: string[];
   @Input() technologies!: Technology[];
+  @Input() url?: string;
+
+
+  protected goToUrl(): void {
+    if (!this.url) return;
+    window.open(this.url, '_blank');
+  }
 
 }
