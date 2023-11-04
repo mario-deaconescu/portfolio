@@ -4,6 +4,7 @@ import { SmoothHeightDirective } from './smooth-height.directive';
 import { SmoothTextComponent } from './smooth-text/smooth-text.component';
 import { CdnPipe } from './cdn.pipe';
 import { TranslatePipe } from './translate.pipe';
+import { AosDirective } from './directives/aos.directive';
 
 
 
@@ -13,13 +14,15 @@ import { TranslatePipe } from './translate.pipe';
         SmoothTextComponent,
         CdnPipe,
         TranslatePipe,
+        AosDirective,
     ],
-  exports: [
-    SmoothHeightDirective,
-    SmoothTextComponent,
-    CdnPipe,
-    TranslatePipe,
-  ],
+    exports: [
+        SmoothHeightDirective,
+        SmoothTextComponent,
+        CdnPipe,
+        TranslatePipe,
+        AosDirective,
+    ],
     imports: [
         CommonModule
     ],

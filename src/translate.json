@@ -156,13 +156,46 @@
     "ro": "Prezent"
   },
   "university-description-1": {
+    "en": "Honors Student",
+    "ro": "Bursier de Merit"
+  },
+  "university-description-2": {
     "en": "Overall grade of 9.78 out of 10.",
     "ro": "Medie generală de 9.78."
   },
-  "university-description-2": {
-    "en": "Proficient in <strong>Algorithms</strong>, <strong>Data Structures</strong>, <strong>Object-Oriented Programming</strong>, and more.",
-    "ro": "Cunosc <strong>Algoritmi</strong>, <strong>Structuri de Date</strong>, <strong>Programare Orientată pe Obiecte</strong>, și altele."
+  "university-description-3": {
+    "en": "Proficient in:",
+    "ro": "Cunoștințe avansate în:"
   },
+  "university-description-3-1": {
+    "en": "Algorithms",
+    "ro": "Algoritmi"
+  },
+  "university-description-3-2": {
+    "en": "Data Structures",
+    "ro": "Structuri de Date"
+  },
+  "university-description-3-3": {
+    "en": "Object-Oriented Programming",
+    "ro": "Programare Orientată pe Obiecte"
+  },
+  "university-description-3-4": {
+    "en": "Database Management Systems",
+    "ro": "Sisteme de Gestionare a Bazelor de Date"
+  },
+  "university-description-3-5": {
+    "en": "Operating Systems",
+    "ro": "Sisteme de Operare"
+  },
+  "university-description-3-6": {
+    "en": "Probability and Statistics",
+    "ro": "Probabilități și Statistică"
+  },
+  "university-description-3-7": {
+    "en": "More",
+    "ro": "etc."
+  },
+
   "darex-description-1": {
     "en": "Give and receive dares from your friends",
     "ro": "Primește și completează provocări de la prietenii tăi"

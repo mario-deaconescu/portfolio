@@ -8,22 +8,22 @@
 <section>
   <h2> {{'what-i-do' | translate | async}} </h2>
   <div id="skills">
-    <skill [skill]="('frontend' | translate | async) ?? ''" svg="assets/web.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('frontend' | translate | async) ?? ''" svg="assets/web.svg" [aos]="'animate__fadeInUp'">
       <p>
         {{'frontend-description' | translate | async}}
       </p>
     </skill>
-    <skill [skill]="('backend' | translate | async) ?? ''" svg="assets/backend.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('backend' | translate | async) ?? ''" svg="assets/backend.svg" [aos]="'animate__fadeInUp'">
       <p>
         {{'backend-description' | translate | async}}
       </p>
     </skill>
-    <skill [skill]="('systems' | translate | async) ?? ''" svg="assets/systems.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('systems' | translate | async) ?? ''" svg="assets/systems.svg" [aos]="'animate__fadeInUp'">
       <p>
         {{'systems-description' | translate | async}}
       </p>
     </skill>
-    <skill [skill]="('devops' | translate | async) ?? ''" svg="assets/devops.svg" class="animate__animated animate__fadeInUp">
+    <skill [skill]="('devops' | translate | async) ?? ''" svg="assets/devops.svg" [aos]="'animate__fadeInUp'">
       <p>
         {{'devops-description' | translate | async}}
       </p>
@@ -34,11 +34,13 @@
 <section>
   <h2> {{'awards' | translate | async}} </h2>
   <div id="awards">
-    <award class="animate__animated animate__zoomIn" [name]="((screenSize.isMobile ? 'national-olympiad' : 'programming-olympiad') | translate | async) ?? ''" image="assets/medal.png">
+    <award [aos]="'animate__zoomIn'" [name]="((screenSize.isMobile ? 'national-olympiad' : 'programming-olympiad') | translate | async) ?? ''" image="assets/medal.png">
       <p [innerHTML]="'olympiad-description' | translate | async"></p>
     </award>
-    <award class="animate__animated animate__zoomIn" name="First Tech Challenge" image="assets/ftc.png">
+    <a href="https://bionicroyals.com/" target="_blank" [aos]="'animate__zoomIn'" >
+    <award name="First Tech Challenge" image="assets/ftc.png">
       <p [innerHTML]="'ftc-description' | translate | async"></p>
     </award>
+    </a>
   </div>
 </section>

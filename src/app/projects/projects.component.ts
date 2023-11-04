@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Platform} from "@angular/cdk/platform";
 import {Meta} from "@angular/platform-browser";
+import {DarelyProjectComponent} from "./darely-project/darely-project.component";
 
 @Component({
   selector: 'app-projects',
@@ -21,4 +22,6 @@ export class ProjectsComponent implements OnInit{
         'WebAssembly Text Interpreter - Run WebAssembly Text format using python; '
     });
   }
+
+    protected readonly DarelyProjectComponent = DarelyProjectComponent;
 }

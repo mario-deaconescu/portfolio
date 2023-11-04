@@ -3,6 +3,7 @@ import {ChildrenOutletContexts, Router} from "@angular/router";
 import {ScreenSize} from "../shared/screen-size.service";
 import {routeAnimation} from "./route.animations";
 import {animate, style, transition, trigger} from "@angular/animations";
+import {AosService} from "../shared/services/aos.service";
 
 export enum Page {
   ABOUT = 'about',
@@ -26,7 +27,7 @@ export enum Page {
 
 export class MainComponent {
 
-  constructor(protected screenSize: ScreenSize, private router: Router, private contexts: ChildrenOutletContexts) {
+  constructor(protected screenSize: ScreenSize, private router: Router, private contexts: ChildrenOutletContexts, protected aosService: AosService) {
   }
 
   public static readonly pageTitles: { [key in Page]: string } = {

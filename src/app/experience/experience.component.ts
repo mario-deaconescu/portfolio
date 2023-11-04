@@ -18,4 +18,5 @@ export class ExperienceComponent implements OnInit{
     });
   }
 
+    protected readonly Array = Array;
 }
