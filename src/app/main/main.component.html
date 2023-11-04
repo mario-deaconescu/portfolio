@@ -1,9 +1,9 @@
 <main>
-  <div id="main-content-wrapper">
+  <div id="main-content-wrapper" (scroll)="aosService.manualRecheck()">
     <h1>
       <smooth-text [input]="(title | translate | async) ?? ''"></smooth-text>
     </h1>
-    <div id="route-wrapper" [@routeAnimation]="getRouteAnimationData()" [smoothHeight]="currentPage">
+    <div id="route-wrapper" [@routeAnimation]="getRouteAnimationData()" [smoothHeight]="currentPage" (@routeAnimation.done)="aosService.manualRecheck()">
       <router-outlet></router-outlet>
     </div>
   </div>

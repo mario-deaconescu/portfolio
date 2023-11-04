@@ -5,10 +5,10 @@
                      [from]="('diginesis-from' | translate | async) ?? ''"
                      [to]="('diginesis-to' | translate | async) ?? ''">
         <ul class="timeline-description">
-          <li class="animate__animated animate__fadeInRight">
+          <li [aos]="'animate__fadeInRight'">
             {{'diginesis-description-1' | translate | async}}
           </li>
-          <li class="animate__animated animate__fadeInRight">
+          <li [aos]="'animate__fadeInRight'">
             {{'diginesis-description-2' | translate | async}}
           </li>
         </ul>
@@ -19,13 +19,13 @@
                      [from]="('netlup-from' | translate | async) ?? ''"
                      [to]="('netlup-to' | translate | async) ?? ''">
         <ul class="timeline-description">
-          <li class="animate__animated animate__fadeInRight">
+          <li [aos]="'animate__fadeInRight'">
             {{'netlup-description-1' | translate | async}}
           </li>
-          <li class="animate__animated animate__fadeInRight">
+          <li [aos]="'animate__fadeInRight'">
             {{'netlup-description-2' | translate | async}}
           </li>
-          <li class="animate__animated animate__fadeInRight">
+          <li [aos]="'animate__fadeInRight'">
             {{'netlup-description-3' | translate | async}}
           </li>
         </ul>
@@ -42,11 +42,20 @@
                      [from]="('university-from' | translate | async) ?? ''"
                      [to]="('university-to' | translate | async) ?? ''">
         <ul class="timeline-description">
-          <li class="animate__animated animate__fadeInRight">
+          <li [aos]="'animate__fadeInRight'">
             {{'university-description-1' | translate | async}}
           </li>
-          <li class="animate__animated animate__fadeInRight"
-              [innerHTML]="'university-description-2' | translate | async"></li>
+          <li [aos]="'animate__fadeInRight'">
+            {{'university-description-2' | translate | async}}
+          </li>
+          <li [aos]="'animate__fadeInRight'">
+            <span> {{'university-description-3' | translate | async}} </span>
+            <ul>
+              <li *ngFor="let i of [1,2,3,4,5,6,7]" [aos]="'animate__fadeInRight'">
+                {{'university-description-3-' + i | translate | async}}
+              </li>
+            </ul>
+          </li>
         </ul>
       </timeline-item>
     </ng-template>

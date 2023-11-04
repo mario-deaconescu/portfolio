@@ -15,7 +15,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
         maxHeight: '0',
       })),
       transition('open <=> closed', [
-        animate('1s ease')
+        animate('.5s ease')
       ]),
     ]),
   ],

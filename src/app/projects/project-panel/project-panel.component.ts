@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
 
 export interface Technology {
   icon: string;
@@ -16,7 +17,15 @@ export class ProjectPanelComponent {
   @Input() features!: string[];
   @Input() technologies!: Technology[];
   @Input() url?: string;
+  @Input() help?: any;
 
+  constructor(private readonly dialog: MatDialog) {
+  }
+
+  protected openDialog(): void {
+    if (!this.help) return;
+    this.dialog.open(this.help);
+  }
 
   protected goToUrl(): void {
     if (!this.url) return;
