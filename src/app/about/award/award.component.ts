@@ -6,6 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./award.component.sass']
 })
 export class AwardComponent {
-  @Input() name!: string;
-  @Input() image!: string;
+  @Input({required: true}) name!: string;
+  @Input({required: true}) image!: string;
+  @Input() imageStyle?: any;
 }

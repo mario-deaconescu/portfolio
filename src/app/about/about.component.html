@@ -23,11 +23,16 @@
         {{'systems-description' | translate | async}}
       </p>
     </skill>
-    <skill [skill]="('devops' | translate | async) ?? ''" svg="assets/devops.svg" [aos]="'animate__fadeInUp'">
+    <skill [skill]="('data-science' | translate | async) ?? ''" svg="assets/datascience.svg" [aos]="'animate__fadeInUp'">
       <p>
-        {{'devops-description' | translate | async}}
+        {{'data-science-description' | translate | async}}
       </p>
     </skill>
+<!--    <skill [skill]="('devops' | translate | async) ?? ''" svg="assets/devops.svg" [aos]="'animate__fadeInUp'">-->
+<!--      <p>-->
+<!--        {{'devops-description' | translate | async}}-->
+<!--      </p>-->
+<!--    </skill>-->
   </div>
 </section>
 
@@ -37,6 +42,19 @@
     <award [aos]="'animate__zoomIn'" [name]="((screenSize.isMobile ? 'national-olympiad' : 'programming-olympiad') | translate | async) ?? ''" image="assets/medal.png">
       <p [innerHTML]="'olympiad-description' | translate | async"></p>
     </award>
+    <a href="https://smarthack.asmi.ro/" target="_blank" [aos]="'animate__zoomIn'" >
+    <award [name]="('smarthack' | translate | async )?? ''"  image="assets/smarthack.png" [imageStyle]="{
+    'filter': 'invert(100%)',
+    'brightness': '200%'
+    }">
+      <p [innerHTML]="'smarthack-description' | translate | async"></p>
+    </award>
+    </a>
+    <a href="https://hack.lsacbucuresti.ro/" target="_blank" [aos]="'animate__zoomIn'" >
+      <award [name]="('hackitall' | translate | async )?? ''"  image="assets/hackitall.png">
+        <p [innerHTML]="'hackitall-description' | translate | async"></p>
+      </award>
+    </a>
     <a href="https://bionicroyals.com/" target="_blank" [aos]="'animate__zoomIn'" >
     <award name="First Tech Challenge" image="assets/ftc.png">
       <p [innerHTML]="'ftc-description' | translate | async"></p>

@@ -15,17 +15,17 @@
 {icon: 'capacitor'},
 ]" url="https://darelyapp.com">
     <figure id="darex-video-wrapper" left>
-<!--      <video autoplay loop muted playsinline onloadedmetadata="this.muted = true" oncanplay="this.play()"-->
-<!--             data-aos="fade-right">-->
-<!--        &lt;!&ndash; Provide the Safari video &ndash;&gt;-->
-<!--        <source *ngIf="platform.SAFARI || platform.IOS"-->
-<!--                [src]="'static-other/darex-hevc-safari.mp4' | CDN"-->
-<!--                type='video/mp4; codecs="hvc1"'>-->
-<!--        &lt;!&ndash; .. and the Chrome video &ndash;&gt;-->
-<!--        <source *ngIf="platform.WEBKIT || platform.BLINK"-->
-<!--                [src]="'static-other/darex-vp9-chrome.webm' | CDN"-->
-<!--                type="video/webm">-->
-<!--      </video>-->
+      <!--      <video autoplay loop muted playsinline onloadedmetadata="this.muted = true" oncanplay="this.play()"-->
+      <!--             data-aos="fade-right">-->
+      <!--        &lt;!&ndash; Provide the Safari video &ndash;&gt;-->
+      <!--        <source *ngIf="platform.SAFARI || platform.IOS"-->
+      <!--                [src]="'static-other/darex-hevc-safari.mp4' | CDN"-->
+      <!--                type='video/mp4; codecs="hvc1"'>-->
+      <!--        &lt;!&ndash; .. and the Chrome video &ndash;&gt;-->
+      <!--        <source *ngIf="platform.WEBKIT || platform.BLINK"-->
+      <!--                [src]="'static-other/darex-vp9-chrome.webm' | CDN"-->
+      <!--                type="video/webm">-->
+      <!--      </video>-->
       <img ngSrc="assets/darely-screenshot.png" alt="Darely" [fill]="true" [priority]="true">
     </figure>
   </project-panel>
@@ -58,6 +58,27 @@
       </video>
     </figure>
   </project-panel>
+</article>
+<mat-divider></mat-divider>
+<article>
+  <project-panel name="SkillWiz" [features]="[
+('skillwiz-description-1' | translate | async) ?? '',
+('skillwiz-description-2' | translate | async) ?? '',
+('skillwiz-description-3' | translate | async) ?? '',
+('skillwiz-description-4' | translate | async) ?? ''
+]" [technologies]="[
+{icon: 'react'},
+{icon: 'react-redux'},
+{icon: 'node'},
+{icon: 'mongodb', scale: 1.1},
+{icon: 'swagger', scale: 1.1},
+{icon: 'chatgpt'},
+]">
+    <figure id="skillwiz-logo" left>
+      <img ngSrc="assets/skillwiz.png" alt="SkillWiz Logo" [width]="300" [height]="355" [priority]="true"/>
+    </figure>
+  </project-panel>
+
 </article>
 <mat-divider></mat-divider>
 <article>

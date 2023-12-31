@@ -71,6 +71,14 @@
     "en": "Manage and scale your project with ease, using the best technologies.",
     "ro": "Administrează și scalează proiectul tău cu ușurință, folosind cele mai bune tehnologii."
   },
+  "data-science": {
+    "en": "Data Science",
+    "ro": "Știința Datelor"
+  },
+  "data-science-description": {
+    "en": "Analyze and visualize data to gain insights and make better decisions.",
+    "ro": "Analizează și vizualizează datele pentru a obține informații și a lua decizii mai bune."
+  },
   "national-olympiad": {
     "en": "National Olympiad",
     "ro": "Olimpiada Națională"
@@ -82,6 +90,22 @@
   "olympiad-description": {
     "en": "Multiple awards at the National Programming Olympiad during 2015-2021, including a <strong>silver medal</strong>.",
     "ro": "Mai multe premii la Olimpiada Națională de Informatică în perioada 2015-2021, inclusiv o <strong>medalie de argint</strong>."
+  },
+  "smarthack": {
+    "en": "Hackathon Winner",
+    "ro": "Câștigător Hackathon"
+  },
+  "smarthack-description": {
+    "en": "Winner of the <strong>Fitbit Award</strong> at the <strong>SmartHack</strong> hackathon, organized in November 2023",
+    "ro": "Câștigător al <strong>Premiului Fitbit</strong> la hackathon-ul <strong>SmartHack</strong>, organizat în noiembrie 2023"
+  },
+  "hackitall": {
+    "en": "Hackathon Winner",
+    "ro": "Câștigător Hackathon"
+  },
+  "hackitall-description": {
+    "en": "Winner of the <strong>3rd place award</strong> at the <strong>HackITall</strong> hackathon, organized in December 2023",
+    "ro": "Câștigător al <strong>locului 3</strong> la hackathon-ul <strong>HackITall</strong>, organizat în decembrie 2023"
   },
   "ftc-description": {
     "en": "Leader of robotics team that won national and international awards at the <strong>First Tech Challenge</strong> competition.",
@@ -211,6 +235,22 @@
   "darex-description-4": {
     "en": "Hosted on cloud architecture",
     "ro": "Funcționează pe arhitectură cloud"
+  },
+  "skillwiz-description-1": {
+    "en": "Learning and recruiting platform for any subject",
+    "ro": "Platformă de învățare și recrutare pentru orice subiect"
+  },
+  "skillwiz-description-2": {
+    "en": "AI-Powered quiz generator and recruitment process",
+    "ro": "Generator de teste și proces de recrutare cu Inteligență Artificială"
+  },
+  "skillwiz-description-3": {
+    "en": "Track your progress and compare with others",
+    "ro": "Urmărește-ți progresul și compară-te cu alții"
+  },
+  "skillwiz-description-4": {
+    "en": "Get revenue based on student enrollment to your courses",
+    "ro": "Primește venituri în funcție de numărul de studenți înscriși la cursurile tale"
   },
   "various-fits-description-1": {
     "en": "Generate new outfits based on your preferences",
