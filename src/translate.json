@@ -127,6 +127,14 @@
     "en": "Software Developer",
     "ro": "Dezvoltator Software"
   },
+  "janestreet-from": {
+    "en": "July 2024",
+    "ro": "Iulie 2024"
+  },
+  "janestreet-to": {
+    "en": "Present",
+    "ro": "Prezent"
+  },
   "diginesis-from": {
     "en": "August 2022",
     "ro": "August 2022"
@@ -134,6 +142,10 @@
   "diginesis-to": {
     "en": "October 2022",
     "ro": "Octombrie 2022"
+  },
+  "janestreet-description-1": {
+    "en": "London, United Kingdom",
+    "ro": "Londra, Regatul Unit"
   },
   "diginesis-description-1": {
     "en": "Developed new ERP software using Python.",
@@ -192,30 +204,34 @@
     "ro": "Cunoștințe avansate în:"
   },
   "university-description-3-1": {
-    "en": "Algorithms",
-    "ro": "Algoritmi"
+    "en": "Algorithms and Data Structures",
+    "ro": "Algoritmi și Structuri de Date"
   },
   "university-description-3-2": {
-    "en": "Data Structures",
-    "ro": "Structuri de Date"
+    "en": "Object-Oriented Programming and Functional Programming",
+    "ro": "Programare Orientată pe Obiecte și Programare Funcțională"
   },
   "university-description-3-3": {
-    "en": "Object-Oriented Programming",
-    "ro": "Programare Orientată pe Obiecte"
+    "en": "Machine Learning",
+    "ro": "Învățare Automată/Inteligență Artificială"
   },
   "university-description-3-4": {
+    "en": "Computer Networks",
+    "ro": "Rețele de Calculatoare"
+  },
+  "university-description-3-5": {
     "en": "Database Management Systems",
     "ro": "Sisteme de Gestionare a Bazelor de Date"
   },
-  "university-description-3-5": {
+  "university-description-3-6": {
     "en": "Operating Systems",
     "ro": "Sisteme de Operare"
   },
-  "university-description-3-6": {
+  "university-description-3-7": {
     "en": "Probability and Statistics",
     "ro": "Probabilități și Statistică"
   },
-  "university-description-3-7": {
+  "university-description-3-8": {
     "en": "More",
     "ro": "etc."
   },

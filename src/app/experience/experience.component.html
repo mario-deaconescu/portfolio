@@ -1,6 +1,17 @@
 <section>
   <timeline [name]="('work' | translate | async) ?? ''" icon="briefcase">
     <ng-template>
+      <timeline-item [name]="('software-engineer-intern' | translate | async) ?? ''" secondaryName="JANE STREET"
+                     [from]="('janestreet-from' | translate | async) ?? ''"
+                     [to]="('janestreet-to' | translate | async) ?? ''">
+        <ul class="timeline-description">
+          <li [aos]="'animate__fadeInRight'">
+            {{'janestreet-description-1' | translate | async}}
+          </li>
+        </ul>
+      </timeline-item>
+    </ng-template>
+    <ng-template>
       <timeline-item [name]="('software-engineer-intern' | translate | async) ?? ''" secondaryName="DIGINESIS"
                      [from]="('diginesis-from' | translate | async) ?? ''"
                      [to]="('diginesis-to' | translate | async) ?? ''">
