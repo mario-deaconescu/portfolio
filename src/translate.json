@@ -132,8 +132,8 @@
     "ro": "Iulie 2024"
   },
   "janestreet-to": {
-    "en": "Present",
-    "ro": "Prezent"
+    "en": "September 2024",
+    "ro": "Septembrie 2024"
   },
   "diginesis-from": {
     "en": "August 2022",
@@ -146,6 +146,10 @@
   "janestreet-description-1": {
     "en": "London, United Kingdom",
     "ro": "Londra, Regatul Unit"
+  },
+  "janestreet-description-2": {
+    "en": "Developed new internal tools and contributed to existing ones using OCaml.",
+    "ro": "Am dezvoltat noi instrumente interne și am contribuit la cele existente folosind OCaml."
   },
   "diginesis-description-1": {
     "en": "Developed new ERP software using Python.",
